@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take a test</title>
+    <script src="https://kit.fontawesome.com/9524f1886d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Test.css">
+</head>
+<body>
+    <div id="header">
+        <div class="homecontainer"  style="background-color:#eb596e;">
+          <nav>
+              <ul id="slidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Test.html">Test</a></li>
+                <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-xmark" style="color: #000;" id="menu" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" style="color: #000;" id="menu" onclick="openmenu()"></i>
+          </nav>
+        </div>
+        <center>
+                <div class="container">
+                    <div class="quiz-box">
+                        <div id="quiz">
+                            <br><br><br>
+                            <h1>Quality of Life Test</h1>
+                            <div class="quiz-header">
+                                <br><br><br>
+                                <p id="progress">Question x</p>
+                                <br><br>
+                                <p id="timer"></p>
+                            </div>
+                            <p id="question"></p>
+                            <br><br>
+                            <div class="buttons">
+                                <button class="btn" id="btn0" value="1">A. <span id="choice0"></span></button>
+                                <br><br>
+                                <button class="btn" id="btn1"value="2">B. <span id="choice1"></span></button>
+                                <br><br>
+                                <button class="btn" id="btn2"value="3">C. <span id="choice2"></span></button>
+                                <br><br>
+                                <button class="btn" id="btn3"value="4">D. <span id="choice3"></span></button>
+                                <br><br>
+                                <button class="btn" id="btn4"value="5">E. <span id="choice4"></span></button>
+                                <br><br>
+                            </div>
+                            <br><br>
+                                <p id="commentline"></p>
+                        </div>
+                    </div>
+      </div>
+    </center>
+    <script src="Test.js"></script>
+</body>
+</html>

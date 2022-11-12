@@ -1,0 +1,549 @@
+/* a,
+a:hover {
+  color: rgba(232,62,51,1);
+}
+
+a {
+  text-decoration: none;
+}
+
+a.green-link {
+  color: rgba(76,129,121,1);
+} */
+
+a, 
+label {
+	cursor: pointer;
+}
+
+/* Container */
+.vh100 {
+  min-height: 100vh;
+}
+
+.container {
+  	padding-left: 15px;
+    padding-right: 15px;
+  	margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 440px) {
+  .container {
+    width: 440px;
+  }
+}
+
+.form-wrap {
+	margin: 20px 0px;
+  min-height: 71vh;
+}
+
+h2 {
+	margin-bottom: 10px;
+	padding: 5px 20px 5px;
+	text-transform: uppercase;
+}
+
+/* List group items */
+.list-group-item:after {
+  content: '';
+  bottom: 0;
+  border-bottom: 18px solid rgba(191,192,194,1);
+  border-left: 18px solid #fff;
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+
+.list-group-item {
+  border: none;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+
+/* Questions */
+.question {
+	background-color: rgba(191,192,194,1);
+	margin-bottom: 10px;
+  min-height: 530px;
+	padding: 20px;
+  position: relative;
+}
+
+.question:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-top: 18px solid #fff;
+  border-left: 18px solid rgba(191,192,194,1);
+  width: 0;
+}
+
+
+.question-number {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.question-number hr {
+	border: 2px solid rgba(57,59,65,1);
+	float: left;
+	margin: -9px 0 10px;
+	width: 10%;
+}
+
+.question-text {
+	padding: 0 0 8px; 
+}
+
+
+/*  Radio buttons 
+-----------------------------------------------------------------------------------------------*/
+
+input[type="radio"] {
+	display: none;
+}
+
+.checkbox label {
+  background-color: rgba(0,0,0,0);
+  border-left: none;
+  padding: 5px 45px;
+  text-transform: none;
+}
+
+label {
+	background-color: #fff;
+	border-left: 40px solid rgba(76,129,121,1);
+	padding: 20px 20px;
+  text-transform: uppercase;
+}
+
+label {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 100%;
+}
+
+label:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(76,129,121,1);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+label.checked {
+  color: white!important;
+}
+
+label.checked:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Progress bars */
+.progress {
+  height: 20px;
+  margin: 10px 0 25px;
+  border-radius: 0;
+  box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+}
+
+.progress-bar {
+  background-color: #578780;
+}
+
+/* Button */
+.btn {
+	background-color: rgba(76,129,121,.9);
+	border-color: rgb(76,129,121);
+	border-radius: 0;
+	color: #fff;
+	padding: 20px 25px;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+	background-color: rgba(76,129,121,1);
+	border-color: rgba(76,129,121,1);
+	color: #fff;
+}
+
+.btn .ion-ios-arrow-thin-right {
+	margin-left: 5px;
+}
+/* 
+.btn:after {
+
+} */
+
+.someText {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.otherText {
+  text-align: center;
+}
+
+.input-group-btn {
+  font-size: 14px;
+}
+
+.email-field {
+  padding: 30px 25px;
+}
+
+
+/* Footer section */
+.footer-upper-section {
+  background-color: #393b41;
+  color: #fff;
+  font-family: Palatino, Georgia, "Times New Roman", Times, serif;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-bottom-section {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-upper-section a {
+  color: #fff;
+}
+.footer-bottom-section a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and ( min-height: 1300px ) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%
+  }
+}
+
+
+
+/**************************************
+  Section headers shifting colors
+  *************************************/
+
+.section-header:after {
+  content: '';
+  bottom: 0;
+  border-bottom: 18px solid #fff;
+  border-left: 18px solid rgba(76,129,121,1);
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+
+
+.section-header {
+  background-color: rgba(76,129,121,1);
+  position: relative;
+}
+
+.section-header h2 {
+  color: #fff;
+  padding:20px 20px 20px;
+}
+
+/* Yellow */
+.section.yellow label {
+  border-left: 40px solid rgba(212,198,10,1);
+}
+
+.section.yellow label:before {
+  background: rgba(212,198,10,1);
+}
+
+.section.yellow .btn {
+  background-color: rgba(212,198,10,.9);
+  border-color: rgba(212,198,10,1);
+}
+
+
+.section.yellow .btn:hover,
+.section.yellow .btn:active,
+.section.yellow .btn:focus {
+  background-color: rgba(212,198,10,1);
+  border-color: rgba(212,198,10,1);
+  color: #fff;
+}
+
+.section.yellow .section-header{
+  background: rgba(212,198,10,1);
+}
+
+.section.yellow .section-header:after {
+  border-left: 18px solid rgba(212,198,10,1);
+}
+/* End yellow */
+
+
+/* Sand */
+.section.sand label {
+  border-left: 40px solid rgba(252,248,191,1);
+}
+
+.section.sand label:before {
+  background: rgba(252,248,191,1);
+}
+
+.section.sand label.checked {
+	color: #333!important;
+}
+
+.section.sand .btn {
+  background-color: rgba(252,248,191,.9);
+  border-color: rgba(252,248,191,1);
+}
+
+
+.section.sand .btn:hover,
+.section.sand .btn:active,
+.section.sand .btn:focus {
+  background-color: rgba(252,248,191,1);
+  border-color: rgba(252,248,191,1);
+  color: #333;
+}
+
+.section.sand .section-header{
+  background: rgba(252,248,191,1);
+}
+
+.section.sand .section-header h2 {
+	color: #333!important;
+}
+
+.section.sand .section-header:after {
+  border-left: 18px solid rgba(252,248,191,1);
+}
+/* End of Sand */
+
+/* Orange */
+.section.orange label {
+  border-left: 40px solid rgba(227,108,10,1);
+}
+
+.section.orange label:before {
+  background: rgba(227,108,10,1);
+}
+
+.section.orange .btn {
+  background-color: rgba(227,108,10,.9);
+  border-color: rgba(227,108,10,1);
+}
+
+
+.section.orange .btn:hover,
+.section.orange .btn:active,
+.section.orange .btn:focus {
+  background-color: rgba(227,108,10,1);
+  border-color: rgba(227,108,10,1);
+  color: #333;
+}
+
+.section.orange .section-header{
+  background: rgba(227,108,10,1);
+}
+
+.section.orange .section-header:after {
+  border-left: 18px solid rgba(227,108,10,1);
+}
+/* End of Orange */
+
+/* Lightorange */
+.section.lightorange label {
+  border-left: 40px solid rgba(251,212,180,1);
+}
+
+.section.lightorange label:before {
+  background: rgba(251,212,180,1);
+}
+
+.section.lightorange .btn {
+  background-color: rgba(251,212,180,.9);
+  border-color: rgba(251,212,180,1);
+}
+
+
+.section.lightorange .btn:hover,
+.section.lightorange .btn:active,
+.section.lightorange .btn:focus {
+  background-color: rgba(251,212,180,1);
+  border-color: rgba(251,212,180,1);
+  color: #333;
+}
+
+.section.lightorange .section-header{
+  background: rgba(251,212,180,1);
+}
+
+.section.lightorange .section-header:after {
+  border-left: 18px solid rgba(251,212,180,1);
+}
+/* End of Lightorange */
+
+/* Lightblue */
+.section.lightblue label {
+  border-left: 40px solid rgba(216,232,230,1);
+}
+
+.section.lightblue label:before {
+  background: rgba(216,232,230,1);
+}
+
+.section.lightblue .btn {
+  background-color: rgba(216,232,230,.9);
+  border-color: rgba(216,232,230,1);
+}
+
+
+.section.lightblue .btn:hover,
+.section.lightblue .btn:active,
+.section.lightblue .btn:focus {
+  background-color: rgba(216,232,230,1);
+  border-color: rgba(216,232,230,1);
+  color: #333;
+}
+
+.section.lightblue .section-header{
+  background: rgba(216,232,230,1);
+}
+
+.section.lightblue .section-header:after {
+  border-left: 18px solid rgba(216,232,230,1);
+}
+/* End of lightblue */
+
+/* Lightgreen */
+.section.lightgreen label {
+  border-left: 40px solid rgba(217,222,196,1);
+}
+
+.section.lightgreen label:before {
+  background: rgba(217,222,196,1);
+}
+
+.section.lightgreen .btn {
+  background-color: rgba(217,222,196,.9);
+  border-color: rgba(217,222,196,1);
+}
+
+
+.section.lightgreen .btn:hover,
+.section.lightgreen .btn:active,
+.section.lightgreen .btn:focus {
+  background-color: rgba(217,222,196,1);
+  border-color: rgba(217,222,196,1);
+  color: #333;
+}
+
+.section.lightgreen .section-header{
+  background: rgba(217,222,196,1);
+}
+
+.section.lightgreen .section-header:after {
+  border-left: 18px solid rgba(217,222,196,1);
+}
+/* End of Lightgreen */
+
+/* grass */
+.section.grass label {
+  border-left: 40px solid rgba(122,134,75,1);
+}
+
+.section.grass label:before {
+  background: rgba(122,134,75,1);
+}
+
+.section.grass .btn {
+  background-color: rgba(122,134,75,.9);
+  border-color: rgba(122,134,75,1);
+}
+
+
+.section.grass .btn:hover,
+.section.grass .btn:active,
+.section.grass .btn:focus {
+  background-color: rgba(122,134,75,1);
+  border-color: rgba(122,134,75,1);
+  color: #333;
+}
+
+.section.grass .section-header{
+  background: rgba(122,134,75,1);
+}
+
+.section.grass .section-header:after {
+  border-left: 18px solid rgba(122,134,75,1);
+}
+/* End of grass */
+
+/* gray */
+.section.gray label {
+  border-left: 40px solid rgba(191,192,194,1);
+}
+
+.section.gray label:before {
+  background: rgba(191,192,194,1);
+}
+
+.section.gray .btn {
+  background-color: rgba(191,192,194,.9);
+  border-color: rgba(191,192,194,1);
+}
+
+
+.section.gray .btn:hover,
+.section.gray .btn:active,
+.section.gray .btn:focus {
+  background-color: rgba(191,192,194,1);
+  border-color: rgba(191,192,194,1);
+  color: #333;
+}
+
+.section.gray .section-header{
+  background: rgba(191,192,194,1);
+}
+
+.section.gray .section-header:after {
+  border-left: 18px solid rgba(191,192,194,1);
+}
+/* End of gray */
